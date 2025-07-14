@@ -1,2 +1,2 @@
-DATABASE_NAME = "pwskills"
+DATABASE_NAME = "green_vision_db"
 COLLECTION_NAME = "forest"
