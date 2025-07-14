@@ -1,0 +1,18 @@
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+
+This worked for me:
+
+In my S3 bucket -> Permissions Tab -> click Block public access -> Edit -> untick Block all public access -> Save 
+
+AND
+
+In my AWS IAM settings -> Users Tab (under Access Management) -> <my-user> -> Add Permissions -> add AmazonS3FullAccess
+
+
+ValueError: Target is multiclass but average='binary'. Please choose another average setting.
+
+This worked for me:
+
+print("Precision Score : ",precision_score(y_test, y_pred, 
+                                           pos_label='positive'
+                                           average='micro'))
